@@ -32,6 +32,7 @@ One of the main challenges faced during the development process was starting the
 ## Technologies Used
 
 - React
+- vite
 - TailwindCSS
 - Framer Motion
 
