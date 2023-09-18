@@ -1,4 +1,3 @@
-I apologize for the confusion. Here is an example of a README file for your project:
 
 # Blu Labs PLC Company Website
 
@@ -15,8 +14,8 @@ To run this project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/ead8/blulabs-website.git`
 2. Navigate to the project directory: `cd blulabs-website`
 3. Install the dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open your browser and visit: `http://localhost:3000`
+4. Start the development server: `npm run dev`
+5. Open your browser and visit: ` http://localhost:5173`
 
 ## Features
 
