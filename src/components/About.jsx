@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { about } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
@@ -19,24 +20,27 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const About = () => (
-  <section id="about" className={layout.section}>
-    <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Why BLUE LABS?
-      </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Discover the Benefits
-      </p>
+  <motion.div>
+    <section id="about" className={layout.section}>
+      <div className={layout.sectionInfo}>
+        <h2 className={styles.heading2}>
+          Why BLU LABS?
+        </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          Discover the Benefits
+        </p>
 
-      <Button styles={`mt-10`} />
-    </div>
+        <Button styles={`mt-10`} />
+      </div>
 
-    <div className={`${layout.sectionImg} flex-col`}>
-      {about.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
-    </div>
-  </section>
+      <div className={`${layout.sectionImg} flex-col`}>
+        {about.map((feature, index) => (
+          <FeatureCard key={feature.id} {...feature} index={index} />
+        ))}
+      </div>
+    </section>
+  </motion.div>
+
 );
 
 export default About;

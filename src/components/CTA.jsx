@@ -6,7 +6,7 @@ const CTA = () => (
     <div className="flex-1 flex flex-col">
       <h2 className={styles.heading2}>Let’s try our service now!</h2>
       <p className={`${styles.paragraph} max-w-[500px] mt-5`}>
-        Unlock the Future of School Management with BLUE LABS
+        Unlock the Future of School Management with BLU LABS
       </p>
     </div>
 
