@@ -1,25 +1,24 @@
-import styles from "./style";
 import { About, CTA, Footer, Navbar, Hero, Services, Contact } from "./components";
-import { motion, useScroll } from "framer-motion"
+import { motion, useViewportScroll } from "framer-motion"
 
 const App = () => {
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useViewportScroll();
   return (
   
-    <div style={{scrollX:scrollYProgress}} className="bg-primary w-full overflow-hidden">
+    <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
   
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <motion.div style={{ opacity: scrollYProgress }} className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
-      </div>
+      </motion.div>
       
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <motion.div style={{ opacity: scrollYProgress }} className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <About />
           <Services />
@@ -27,7 +26,7 @@ const App = () => {
           <Contact/>
           <Footer />
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
