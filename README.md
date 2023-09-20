@@ -38,6 +38,6 @@ One of the main challenges faced during the development process was starting the
 
 ## Contact
 
-For any questions or inquiries, please feel free to reach out to me at support@blulabs.net.
+For any questions or inquiries, please feel free to reach out to me at ebisaadw@gmail.com.
 
 Thank you for considering my submission!
